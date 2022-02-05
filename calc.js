@@ -243,7 +243,7 @@ Cinp2.onchange=function(event){
           x.innerHTML=`your GP is ${FinalResult.toFixed(2)} out of an obtainable 5.00}`
     }
 
-function show(){
+/*function show(){
    const node = document.createElement("p")
    node.value="inp3.value"
       const war = document.createTextNode('Water ') 
@@ -252,11 +252,9 @@ function show(){
      die.appendChild( node)
       const div2= document.getElementById("nin2")
       div2.appendChild(die)
-    
+   
 
    ;
 }
-Short("ninja").onclick=function(event){
-   console.log("i dey for una")
-}
+ */
       
