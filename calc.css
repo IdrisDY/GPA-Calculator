@@ -23,12 +23,16 @@ flex-direction: column;
 margin: auto;
 justify-content: center;
 align-items: center;
+
 }
 .inp{
-  
+  background: lightskyblue;
    margin-top: 2em;
-   padding: 2em;
+   padding: 1.5em;
+   border-radius: 1em;
+
 }
 input{
-   margin: 2em;
+   margin: 1.5em;
+   border: black solid .1em;
 }
