@@ -5,6 +5,7 @@ let container= Short("container")
 let newP =  document.createElement("div")
 container.appendChild(newP)
 let resetBtn = document.getElementsByClassName('btn-reset')[0]
+let calcBtn = document.getElementsByClassName('btn-calc')[0]
 
 let g = 10
 
@@ -56,11 +57,13 @@ let Qinp3 = Short ("Qinp3")
   
 
 let TotalPoints=0
-
-
+Tinp2.value=''
+Finp2.value=''
+Cinp2.value=''
+Qinp2.value=''
+Sinp2.value=''
           
 
-   
 
 
 
@@ -68,8 +71,16 @@ let TotalPoints=0
 
    console.log("working")
    function Calc(){
+      let allFilled = (typeof (Qinp3.value)!== Number && typeof (Finp3.value)!== Number && typeof (Cinp3.value)!== Number&&typeof (Tinp3.value)!== Number&&typeof (Sinp3.value)!== Number)
 console.log(allFilled)
+calcBtn.disabled = true
 
+if(!allFilled){
+   calcBtn.disabled = false
+   console.log('falseflag')
+}
+
+      
    switch(inp2.value){
       case("A"):
       console.log( P1 = 5 *inp3.value); 
@@ -259,5 +270,3 @@ function resBtn(){
     
 
 }
-let allFilled =  Boolean(Qinp2.value != '')
-console.log(allFilled)

@@ -8,9 +8,17 @@
    <link rel="stylesheet" href="calc.css">
 </head>
 <body>
-   <div id="container">
-   <p id="p"> </p>
-   <div class="inp">
+
+   <div id="content-box">
+
+   <div class="Gptext">
+      <h1> <em> GP</em> Calculator</h1>
+      </div>
+
+
+      <div id="container">
+
+      
    <div id="firstrow">
 <label> Subject</label>
 <label> Grades</label>
@@ -20,28 +28,60 @@
    
       <div class="d1">
       <input type="text" id="Finp1"></input>
-      <input type="text" id="Finp2"></input>
-      <input type="text" id="Finp3"></input>
+      <select id="Finp2">
+         <option type="checkbox">A</option>
+         <option type="checkbox">B</option>
+         <option type="checkbox">C</option>
+         <option type="checkbox">D</option>
+         <option type="checkbox">E</option>
+         <option type="checkbox">F</option>
+
+      </select>
+<input type="text" id="Finp3"></input>
       </div>
 
 
       <div class="d2">
          <input type="text" id="Sinp1"></input>
-         <input type="text" id="Sinp2"></input>
-         <input type="text" id="Sinp3"></input>
+         <select id="Sinp2">
+            <option type="checkbox">A</option>
+            <option type="checkbox">B</option>
+            <option type="checkbox">C</option>
+            <option type="checkbox">D</option>
+            <option type="checkbox">E</option>
+            <option type="checkbox">F</option>
+
+         </select>
+      <input type="text" id="Sinp3"></input>
          </div>
 
 
          <div class="d3">
             <input type="text" id="Tinp1"></input>
-            <input type="text" id="Tinp2"></input>
+            <select id="Tinp2">
+               <option type="checkbox">A</option>
+               <option type="checkbox">B</option>
+               <option type="checkbox">C</option>
+               <option type="checkbox">D</option>
+               <option type="checkbox">E</option>
+               <option type="checkbox">F</option>
+
+            </select>
             <input type="text" id="Tinp3"></input>
             </div>
 
             
          <div class="d4">
             <input type="text" id="Qinp1"></input>
-            <input type="text" id="Qinp2"></input>
+            <select id="Qinp2">
+               <option type="checkbox">A</option>
+               <option type="checkbox">B</option>
+               <option type="checkbox">C</option>
+               <option type="checkbox">D</option>
+               <option type="checkbox">E</option>
+               <option type="checkbox">F</option>
+
+            </select>
             <input type="text" id="Qinp3"></input>
             </div>
 
@@ -49,7 +89,15 @@
             
          <div class="d5">
             <input type="text" id="Cinp1"></input>
-            <input type="text" id="Cinp2"></input>
+            <select id="Cinp2">
+               <option type="checkbox">A</option>
+               <option type="checkbox">B</option>
+               <option type="checkbox">C</option>
+               <option type="checkbox">D</option>
+               <option type="checkbox">E</option>
+               <option type="checkbox">F</option>
+
+            </select>
             <input type="text" id="Cinp3"></input>
             </div>
 
@@ -59,10 +107,11 @@
    <div>
       <button onclick="Calc()" class="btn-calc"> Calculate GP</button>
       <button class="btn-reset" onclick="resBtn()">Reset </button>
-      <input type="text">
+      <p id="p"> </p>
    </div>
-</div>
+
    
+</div>
 </div>
   
    
